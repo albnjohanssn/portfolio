@@ -1,5 +1,6 @@
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -7,13 +8,15 @@ export default function Home() {
       <Navbar />
       <header className='mt-20'>
         <div className='flex justify-center'>
-          <h1 className='text-5xl text-zinc-800'>Hello, I'm albn_johanssn!</h1>
+          <h1 className='text-5xl text-zinc-800'>Hello, I&apos;m albn_johanssn!</h1>
         </div>
         <div className='my-20 flex justify-center'>
-          <img
-            alt="profile_picture.jpg"
+          <Image
+            alt="Your Company"
             src="/profile_picture.jpg"
-            className="inline-block size-48 rounded-full"
+            width={164}
+            height={164}
+            className="rounded-full"
           />
         </div>
       </header>
